@@ -1,0 +1,48 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 725px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('WallpaperDog-20352933.jpg') no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+ul li{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    margin-bottom: 80px;
+    position: relative;
+    top: 100px;
+    right: 15%;
+}
+ul li a{
+    text-decoration: none;
+    margin: auto;
+    padding: 10px 35px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition: .6s ease;
+    
+}
+ul li a:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 15px white;
+    font-weight: bold;
+}
